@@ -15,7 +15,16 @@
     .jp{font-family:"Hiragino Sans","Yu Gothic","Noto Sans JP",sans-serif}.high{color:#17683b;font-weight:700}.med{color:#8a5a08;font-weight:700}.small{font-size:.88rem}.rank{font-weight:700;text-align:center}
     footer{margin-top:42px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}
     @media(max-width:700px){main{margin:0;padding:28px 18px;box-shadow:none}table{display:block;overflow-x:auto}h1{font-size:1.7rem}}
-    @media print{body{background:white}main{margin:0;max-width:none;box-shadow:none;padding:24px}tr{break-inside:avoid}}
+    @page{size:A4;margin:8mm}
+    @media print{
+      body{background:white;font-size:13px;line-height:1.45}
+      main{margin:0;max-width:none;box-shadow:none;padding:8px 12px}
+      h1{font-size:1.8rem} h2{margin-top:20px;font-size:1.4rem}
+      .meta{margin:11px 0}.callout{margin:13px 0;padding:9px 13px}
+      table{font-size:.8rem;margin:10px 0 14px}th,td{padding:6px 7px}
+      tr{break-inside:avoid} ol{margin-bottom:8px}
+      footer{margin-top:15px;padding-top:10px}
+    }
   </style>
 </head>
 <body>
